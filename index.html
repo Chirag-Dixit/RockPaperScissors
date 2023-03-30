@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id = "parent_div">
+        <div id="player_choice">
+            <p>YOU</p>
+            <img src="images/rock.png" alt="" id="mychoice">
+            <div id="functions">
+                <button id="but1" onclick="rock()">Rock</button>
+                <button id="but2" onclick="paper()">Paper</button>
+                <button id="but3" onclick="scissor()">Scissor</button>
+            </div>
+        </div>
+
+        <div id="score">
+            <p style="color: palegreen" id="message-el">unseen</p>
+            <p id="scoreCard"> 0 - 0 </p>
+            <p id="round-el">Round: 0</p>
+        </div>
+
+        <div id="computerChoice">
+            <p>COMPUTER</p>
+            <img src="images/rock_comp.png" alt="" id="comp-choice">
+            <div id="functions2">
+                <button id="but1" class="R5" onclick="fiveRounds()">5 Round</button>
+                <button id="but2" class="R10" onclick="tenRounds()">10 Round</button>
+                <button id="but3" class="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>  
+    </div>
+    <p style="font-size: 16px; margin-top: 40px; font-weight:bold; margin-right: 600px; margin-left: 600px;">Press on the button indicating the number of rounds you want to Play. Then, click on the hand you want to choose(Rock, paper or Scissor).Once the game is over, press reset to Reset the ScoreCard and the Number of rounds.</p>
+    <script src="index.js"></script>
+</body>
+</html>
